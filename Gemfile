@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
+if RUBY_PLATFORM == 'java'
+  gem 'warbler'
+end
+
 gem 'gollum-lib', :git => 'https://github.com/FreifunkBremen/gollum-lib.git'
 gemspec
-gem 'rake', '~> 10.4'
-gem 'gollum-rugged_adapter', '= 0.4.4'
-gem 'github-markdown', '~> 0.6.9'
+
+gem "rake", '~> 12.3', '>= 12.3.3'
+
